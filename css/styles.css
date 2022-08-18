@@ -1,0 +1,98 @@
+:root {
+    /*fonts*/
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+    /*colors*/
+    --heading-txt-color: #212121;
+    --subheading-txt-color: #757575;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: ;
+    color:;
+    padding: 0;
+    margin: 0;
+}
+
+/* reset */
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+.header {}
+
+.logo {
+    font-family: var(--logo-font);
+}
+
+.logo-header {}
+
+.nav {}
+
+.nav-list {}
+
+.nav-list-item {}
+
+.link {}
+
+.header-contacts-list {}
+
+.header-contacts-list-item {}
+
+/* Main */
+
+.banner {}
+
+.banner-heading {}
+
+.button {}
+
+.banner-button {}
+
+.features {}
+
+.features-list {}
+
+.features-list-item {}
+
+.features-list-item-heading {}
+
+.features-list-item-description {}
+
+.work {}
+
+.work-heading {}
+
+.work-list {}
+
+.work-list-item {}
+
+.img {}
+
+.team {}
+
+.team-heading {}
+
+.team-list {}
+
+.team-list-item {}
+
+.team-list-item-title {}
+
+.team-list-item-description {}
+
+.logo-footer {}
+
+.address-list {}
+
+.address-list-item {}

@@ -53,7 +53,9 @@ a {
 .img {}
 
 /*header*/
-.header {}
+.header {
+    background-color: var(--header-bg-color);
+}
 
 .header .link:hover,
 .header .link:focus {
@@ -159,7 +161,9 @@ a {
 
 .work-list-item {}
 
-.team {}
+.team {
+    background-color: var(--secondary-bg-color);
+}
 
 .team-heading {
     font-size: 36px;

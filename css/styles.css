@@ -39,10 +39,25 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 50px;
 }
 
 .button {
     cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .page {}
@@ -50,6 +65,11 @@ a {
 .link {}
 
 .img {}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /*header*/
 .header {
@@ -59,6 +79,26 @@ a {
 .header .link:hover,
 .header .link:focus {
     color: var(--accent-color);
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo-container {
+    display: block;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -135,7 +175,17 @@ a {
 
 .features {}
 
-.features-list {}
+.features-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-list {
+    display: flex;
+}
 
 .features-list-item {}
 
@@ -146,6 +196,7 @@ a {
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .features-list-item-description {
@@ -153,9 +204,27 @@ a {
     line-height: calc(24 / 14);
     color: var(--main-color);
     letter-spacing: 0.03em;
+    margin-right: 30px;
+}
+
+.features-list-item:last-child {
+    margin-right: 0;
 }
 
 .work {}
+
+.work-list {
+    display: flex;
+    gap: 30px;
+}
+
+.work-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .work-heading {
     font-size: 36px;
@@ -163,6 +232,7 @@ a {
     color: var(--heading-color);
     font-weight: 700;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .work-list {}
@@ -173,18 +243,34 @@ a {
     background-color: var(--secondary-bg-color);
 }
 
+.team-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .team-heading {
     font-size: 36px;
     line-height: calc(42 / 36);
     color: var(--heading-color);
     font-weight: 700;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 30px;
+}
 
 .team-list-item {
     background-color: var(--white-color);
+}
+
+.team-item-text {
+    padding: 30px 61px;
 }
 
 .team-list-item-title {
@@ -193,6 +279,7 @@ a {
     color: var(--heading-color);
     font-weight: 500;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .team-list-item-description {
@@ -206,7 +293,16 @@ a {
 
 .portfolio {}
 
-.portfolio-buttons-list {}
+.portfolio-buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.portfolio-buttons-list-box {
+    margin-bottom: 34px;
+}
 
 .portfolio-button {}
 
@@ -229,7 +325,11 @@ a {
     color: var(--white-color);
 }
 
-.portfolio-projects-list {}
+.portfolio-projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 .portfolio-project {}
 
@@ -252,11 +352,17 @@ a {
 
 .footer {
     background-color: var(--footer-bg-color);
+    margin-bottom: 20px;
 }
 
 .footer .link:hover,
 .footer .link:focus {
     color: var(--accent-color);
+}
+
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -273,6 +379,7 @@ a {
     color: var(--address-color);
     letter-spacing: 0.03em;
     font-style: normal;
+    margin-bottom: 10px;
 }
 
 .address-location {

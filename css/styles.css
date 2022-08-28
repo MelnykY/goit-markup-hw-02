@@ -21,6 +21,8 @@
     --btn-accent-color: #188CE8;
     --btn-active-color: #2196F3;
     --btn-filter-color: #2196F3;
+    /*line color*/
+    --line-color: #ECECEC;
     /*portfolio grid*/
     --items: 3;
     --indent: 30px;
@@ -34,6 +36,17 @@ body {
 }
 
 /* reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -67,11 +80,21 @@ a {
 
 .link {}
 
-.img {}
+.img {
+    display: block;
+}
 
 .section {
     padding-top: 94px;
-    padding-bottom: 94px;
+    /*padding-bottom: 94px;*/
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*header*/
@@ -84,17 +107,9 @@ a {
     color: var(--accent-color);
 }
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .header-container {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
 }
 
 .header-logo-container {
@@ -102,6 +117,7 @@ a {
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 95px;
 }
 
 .logo {
@@ -117,9 +133,22 @@ a {
     color: var(--black-color);
 }
 
-.nav {}
+.header,
+.nav-list-item,
+.link,
+.header-contacts-list-item {
+    display: block;
+    padding-top: 32px;
+}
 
-.nav-list {}
+.nav {
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
 
 .nav-list .link.current {
     color: var(--accent-color);
@@ -143,11 +172,23 @@ a {
     letter-spacing: 0.02em;
 }
 
+/*header line for portfolio page*/
+
+.line {
+    width: 1600px;
+    height: 0px;
+    left: 0px;
+    top: 80px;
+    border: 1px solid var(--line-color);
+}
+
 .main {}
 
 /*index-page*/
 .hero {
     background-color: var(--banner-bg-color);
+    text-align: center;
+    padding-bottom: 94px;
 }
 
 .hero-heading {
@@ -157,6 +198,9 @@ a {
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -168,6 +212,10 @@ a {
     font-weight: 700;
     letter-spacing: 0.06em;
     border-style: none;
+    cursor: pointer;
+    padding: 10px 28px;
+    width: 216px;
+    min-height: 50;
 }
 
 .hero-button:active,
@@ -188,6 +236,7 @@ a {
 
 .features-list {
     display: flex;
+    gap: 30px;
 }
 
 .features-list-item {}
@@ -210,11 +259,14 @@ a {
     margin-right: 30px;
 }
 
-.features-list-item:last-child {
+.features-list-item:last-child,
+.features-list-item-description:last-child {
     margin-right: 0;
 }
 
-.work {}
+.work {
+    padding-bottom: 94px;
+}
 
 .work-list {
     display: flex;
@@ -236,6 +288,7 @@ a {
     font-weight: 700;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .work-list {}
@@ -244,6 +297,7 @@ a {
 
 .team {
     background-color: var(--secondary-bg-color);
+    padding-bottom: 94px;
 }
 
 .team-container {
@@ -261,6 +315,7 @@ a {
     font-weight: 700;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .team-list {
@@ -298,10 +353,10 @@ a {
 
 .portfolio-buttons-list {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: center;
+    gap: 8px;
 }
-
 
 .portfolio-buttons-list-box {
     margin-bottom: 34px;
@@ -321,7 +376,6 @@ a {
     border: 0;
     height: 38px;
     cursor: pointer;
-    margin-right: 8px;
     padding: 6px 22px;
 }
 
@@ -335,6 +389,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 94px;
 }
 
 .portfolio-project {
@@ -385,7 +440,15 @@ a {
 
 .footer-contacts {}
 
-.address-list {}
+.address-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    gap: 10px;
+}
 
 .address-list-item {
     font-size: 14px;
@@ -393,10 +456,10 @@ a {
     color: var(--address-color);
     letter-spacing: 0.03em;
     font-style: normal;
-    margin-bottom: 10px;
 }
 
 .address-location {
     color: var(--white-color);
     font-style: normal;
+
 }

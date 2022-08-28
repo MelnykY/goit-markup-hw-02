@@ -175,11 +175,7 @@ a {
 /*header line for portfolio page*/
 
 .line {
-    width: 1600px;
-    height: 0px;
-    left: 0px;
-    top: 80px;
-    border: 1px solid var(--line-color);
+    border-bottom: 1px solid var(--line-color);
 }
 
 .main {}
